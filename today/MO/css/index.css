@@ -6,16 +6,14 @@ body {background-color:#FBFACD;}
 body::-webkit-scrollbar {width:5px; background-color:transparent;}
 body::-webkit-scrollbar-thumb {border-radius:20px; background-color:#7F669D;}
 .inner {width:100%; padding:0 20px; margin:0 auto;}
-.h100 {height:100vh;}
-.h190 {height:190vh;}
 
 /*header*/
 header {position:relative; height:100vh;}
-.title-wrap {position:absolute; top:45%; left:50%; transform:translate(-50%,-80%);}
+.title-wrap {position:absolute; top:47%; left:50%; transform:translate(-50%,-80%);}
 .circle {display:block; position:absolute; top:40%; left:50%; animation:size 5s linear infinite; z-index:-1;}
 .circle::before {display:block; content:""; width:160px; height:160px; position:absolute; top:0; left:50%; transform:translate(-50%,-65%); background:url("../images/circle.png") no-repeat; background-size:cover;}
 .title-wrap .main-title {max-width:250px; margin:0 auto; font-family:'Fredoka One', cursive; font-size:65px; text-align:center;}
-.scroll-img-area {position:absolute; bottom:150px; left:50%; transform:translateX(-50%);}
+.scroll-img-area {position:absolute; bottom:120px; left:50%; transform:translateX(-50%);}
 .scroll-img-area .scroll-img {width:100px; animation:scroll 1s linear infinite alternate;}
 
 @keyframes size {
