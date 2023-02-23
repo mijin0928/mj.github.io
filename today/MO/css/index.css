@@ -12,7 +12,7 @@ body::-webkit-scrollbar-thumb {border-radius:20px; background-color:#7F669D;}
 header {position:relative; height:100vh;}
 .title-wrap {position:absolute; top:45%; left:50%; transform:translate(-50%,-80%);}
 .circle {display:block; position:absolute; top:43%; left:50%; animation:size 5s linear infinite; z-index:-1;}
-.circle::before {display:block; content:""; width:160px; height:160px; position:absolute; top:38%; left:50%; transform:translate(-50%,-65%); background:url("../images/circle.png") no-repeat; background-size:cover;}
+.circle::before {display:block; content:""; width:160px; height:160px; position:absolute; top:39%; left:50%; transform:translate(-50%,-65%); background:url("../images/circle.png") no-repeat; background-size:cover;}
 .title-wrap .main-title {max-width:250px; margin:0 auto; font-family:'Fredoka One', cursive; font-size:65px; text-align:center;}
 .scroll-img-area {position:absolute; bottom:150px; left:50%; transform:translateX(-50%);}
 .scroll-img-area .scroll-img {width:100px; animation:scroll 1s linear infinite alternate;}
