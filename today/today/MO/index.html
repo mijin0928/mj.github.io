@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="mijin">
+    <meta name="description" content="today">
+    <link rel="stylesheet" href="./css/reset.css" type="text/css">
+    <link rel="stylesheet" href="./css/index.css" type="text/css">
+    <title>TODAY</title>
+    <link rel="icon" href="../PC/images/favicon.ico">
+    <link rel="shortcut icon" href="../PC/images/favicon.ico">
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+					<div class="inner">
+						<div class="title-wrap">
+							<h1 class="main-title">TODAY IS ...</h1>
+						</div>
+						<span class="circle"></span>
+						<div class="scroll-img-area hide">
+							<img src="./images/scroll.png" alt="scrollImg" class="scroll-img">
+						</div>
+					</div>
+        </header>
+
+        <main>
+					<section id="today">
+						<div class="today-wrap">
+							<div class="inner">
+								<h2 class="title">day</h2>
+								
+								<div class="day-wrap">
+									<div class="day">
+										<strong class="year"></strong>
+										<svg width="280" height="150" viewBox="0 0 650 10">
+											<text class="month" text-anchor="middle" x="50%"></text>
+										</svg>
+										<div class="txt">
+											<strong class="date"></strong>
+											<strong class="day-week"></strong>
+										</div>
+									</div>
+								</div>
+							</div>          
+						</div>     
+					</section>
+
+						<section id="weather" class="section">
+							<div class="common-wrap">
+                <div class="inner">
+									<h2 class="title">오늘의 <span class="txt">날씨</span> <span class="dot"></span></h2>
+									<div class="weather-data">
+										<div class="tit">
+												<strong class="icon"></strong>
+												<div class="tit-detail">
+														<strong class="name"></strong>
+														<strong class="temperature"></strong><span class="degree">&#8451;</span>
+												</div>
+										</div>
+
+										<div class="tit-description">
+											<strong class="description"></strong>
+										</div>
+
+										<div class="cont">
+												<ul>
+														<li>
+																<img src="../PC/images/low-temperature.png" alt="high-temperature">
+																<strong class="tempMin"></strong><span>&#8451;</span>
+														</li>
+														<li>
+																<img src="../PC/images/high-temperature.png" alt="high-temperature">
+																<strong class="tempMax"></strong><span>&#8451;</span>
+														</li>
+														<li>
+																<img src="../PC/images//humidity.png" alt="humidity">
+																<strong class="humidity"></strong><span>&#37;</span>
+														</li>
+														<li>
+																<img src="../PC/images/clouds.png" alt="clouds">
+																<strong class="clouds"></strong><span>&#37;</span>
+														</li>
+														<li>
+																<img src="../PC/images/wind.png" alt="wind">
+																<strong class="wind"></strong><span>m&#47;s</span>
+														</li>
+												</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+            </section>
+
+						<section id="fortune-telling" class="section">
+							<div class="common-wrap">
+								<div class="inner">
+									<h2 class="title">오늘의 <span class="txt">운세</span> <span class="dot"></span></h2>
+									<div class="area-wrap">
+											<div class="hand-area">
+													<div class="txt-area">
+															<span class="txt type01">손을 클릭하여<br></span>
+															<span class="txt type02">구슬을 문질러보세요</span>
+													</div>
+													<div class="img-area-static">
+															<img src="../PC/images/hand.png" alt="hand" class="hand-img">
+													</div>
+											</div>
+											<div class="img-area">
+													<div class="ball">
+															<img src="../PC/images/crystal-ball.gif" alt="crystal-ball" class="ball-img">
+													</div>
+													<div class="wizard">
+															<img src="../PC/images/wizard.png" alt="wizard" class="wizard-img">
+													</div>
+											</div>
+											<div class="loading hide">
+													<img src="../PC/images/loading.gif" alt="loading" class="loading-img">
+											</div>
+											<div class="result-area hide">
+													<div class="result">
+															<p class="result-txt"></p>
+													</div>
+											</div>
+											<div class="reset hide">
+												<a href="#"><img src="../PC/images/reset.png" alt="reset" class="reset-img"></a>
+										</div>
+									</div>
+								</div>
+								<div class="img-area-move">
+										<img src="../PC/images/hand.png" alt="hand" class="hand-img hide">
+								</div>
+							</div>
+            </section>
+
+						<section id="to-do-list" class="section">
+							<div class="common-wrap">
+								<div class="inner">
+									<div class="to-do-list-wrap">
+											<h2 class="title">오늘의 <span class="txt">할일</span> <span class="dot"></span></h2>
+											<div class="write">
+													<input type="text" placeholder="오늘의 할일을 작성해주세요" title="오늘의 할일 입력" class="write-box">
+													<button type="button" class="enter-btn">입력</button>
+											</div>
+											<div class="cont"></div>
+									</div>
+								</div>
+							</div>
+            </section>
+
+						<section id="menu-planner" class="section">
+							<div class="common-wrap">
+								<div class="inner">
+									<h2 class="title">오늘의 <span class="txt">식단</span> <span class="dot"></span></h2>
+									<div class="menu-planner-wrap">
+											<div class="write">
+													<input type="text" placeholder="오늘 하루 먹은 or 먹을 음식을 작성해보세요" title="식단 입력" class="write-box">
+													<div class="select-box">
+															<button type="button" class="select-btn"><span class="txt">선택</button>
+															<span class="select-arrow"></span>
+															<div class="select-list-area">
+																	<ul class="select-list hide">
+																			<li>아침</li>
+																			<li>점심</li>
+																			<li>저녁</li>
+																	</ul>
+															</div>
+													</div>
+											</div>
+
+											<div class="menu">
+												<ul>
+														<li>
+																<strong class="tit">아침</strong>
+																<div class="menu-list breakfast"></div>
+																<span class="bg"></span>
+														</li>
+														<li>
+																<strong class="tit">점심</strong>
+																<div class="menu-list lunch"></div>
+																<span class="bg"></span>
+														</li>
+														<li>
+																<strong class="tit">저녁</strong>
+																<div class="menu-list dinner"></div>
+																<span class="bg"></span>
+														</li>
+												</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+            </section>
+
+						<section id="question" class="section">
+							<div class="common-wrap">
+								<div class="inner">
+									<h2 class="title">오늘의 <span class="txt">질문</span> <span class="dot"></span></h2>
+									<div class="question-list">
+										<div class="tit-wrap">
+											<strong class="tit"></strong>
+										</div>
+										<div class="txt-area">
+												<textarea title="내용 입력" placeholder="내용을 작성해주세요"></textarea>
+										</div>
+										<div class="btn">
+											<button type="button" class="enter">입력</button>
+											<button type="button" class="edit">수정</button>
+										</div>
+									</div>
+								</div>
+							</div>
+            </section>
+        </main>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
