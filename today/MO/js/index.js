@@ -208,13 +208,13 @@ function today(){ //오늘 날짜
 		"November",
 	]
 	const dayWeekArr = [
-		"Sun.",
-		"Mon.",
-		"Tue.",
-		"Wed.",
-		"Thu.",
-		"Fri.",
-		"Sat.",
+		"Sun",
+		"Mon",
+		"Tue",
+		"Wed",
+		"Thu",
+		"Fri",
+		"Sat",
 	]
 	const t = new Date();
 	const y = t.getFullYear();
