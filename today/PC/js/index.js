@@ -192,7 +192,6 @@ title();
 function today(){ //오늘 날짜
     const year = document.querySelector(".year");
     const month = document.querySelector(".month");
-    const date = document.querySelector(".date");
 		const arr = [
 			"December",
 			"January",
@@ -221,7 +220,7 @@ function today(){ //오늘 날짜
 			const dayTxt = document.querySelectorAll(".day-table td");
 			const firstDay = new Date(y,m,1).getDay();
 			const lastDay = new Date(y,m+1,0).getDate();
-
+			
 			for(let i = 1; i <= lastDay; i++){
 				dayTxt[firstDay + i - 1].textContent += i;
 				if(dayTxt[firstDay + i - 1].textContent == d){ 
